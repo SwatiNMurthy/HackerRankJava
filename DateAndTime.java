@@ -9,7 +9,7 @@ import java.util.regex.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
-
+//import java.time.LocalDate;
 class Result {
 
     /*
@@ -27,6 +27,13 @@ class Result {
         SimpleDateFormat s = new SimpleDateFormat("EEEE");
         String a = s.format(d);
         return a.toUpperCase();
+        /*
+        int d = Integer.valueOf(day);
+        int m = Integer.valueOf(month);
+        int y = Integer.valueOf(year);
+        LocalDate date = LocalDate.of(y, m, d);
+        return date.getDayOfWeek().toString();
+        */
 
     }
 
